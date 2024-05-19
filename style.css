@@ -80,11 +80,27 @@ body{
     color: #fff;
     font-weight: 600;
 }
-
-.main h4 span{
-    color: #0059ff;
-    text-decoration: underline;
+@keyframes text-color-scroll {
+    0% {
+        color: #002466; 
+    }
+    50% {
+        color: #6699ff;
+    }
+    100% {
+        color: #002466;
+    }
 }
+
+.main h4 span {
+    text-decoration: underline;
+    display: inline-block;
+    animation-name: text-color-scroll; 
+    animation-duration: 3s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+
 
 .main p.title{
     font-size: 44px;
