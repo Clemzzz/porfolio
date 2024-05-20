@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="particles">
+        <!-- Particles will be added dynamically -->
+    </div>
+    <script>
+        const particles = document.querySelector('.particles');
+
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.width = `${Math.random() * 5 + 2}px`;
+            particle.style.height = particle.style.width;
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
+            particles.appendChild(particle);
+        }
+    </script>
     <div class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#about">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
     </div>
@@ -33,10 +49,15 @@
         <div class="info">
             <h3>About Me</h3>
             <p>My name is Clément I'm 16 years old and 
-                I've been programming recently. The languages ​​that interest me the most are python and html css. 
+                I've been programming recently. the languages ​​that interest me the most are python and html css. 
                 My other hobbies are tennis, video games and music.
-                Oh yes I almost forgot I'm really very funny, just look at the photo and you'll see...
+                ah yes I almost forgot I'm really very funny, just look at the photo and you'll see...
             </p>
+            <div class="links-col">
+                <a href="https://www.instagram.com/clems._bzn/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Clemzzz"><i class='bx bxl-github' ></i></a>
+                <a href="https://x.com/clemzftn"><i class='bx bxl-twitter' ></i></a>
+            </div>
         </div>
     </div>
 
@@ -67,32 +88,14 @@
         </div>
 
     </div>
-    
+
     <footer>
-        <div class="cols">
-            <div class="about-col">
-                <h3>Clément</h3>
-                <p>Creative FullStack Developer</p>
-            </div>
-
+        <div  id="contact" class="cols">
             <div class="links-col">
-                <h4>Useful Links</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#">Contact</a>
+                <a href="https://www.instagram.com/clems._bzn/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Clemzzz"><i class='bx bxl-github' ></i></a>
+                <a href="https://x.com/clemzftn"><i class='bx bxl-twitter' ></i></a>
             </div>
-
-            <div class="links-col">
-                <h4>Social Media</h4>
-                <a href="https://www.instagram.com/clems._bzn/">Instagram</a>
-                <a href="https://github.com/Clemzzz">Github</a>
-                <a href="https://x.com/clemzftn">Twitter</a>
-            </div>
-
-
-
-
         </div>
         <div class="droit">
             <p>© 2024 Bazin Clément. All rights reserved.</p>
