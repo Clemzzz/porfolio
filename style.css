@@ -182,7 +182,7 @@ body{
     font-size: 2.5rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
-    transition: color 0.3s ease-in-out;
+    transition: 0.7S;
 }
 
 .links-col a:hover{
@@ -276,7 +276,7 @@ footer .cols .links-col a{
     font-size: 2.5rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
-    transition: color 0.3s ease-in-out;
+    transition: 0.7S;
 }
 
 footer .cols .links-col a:hover{
